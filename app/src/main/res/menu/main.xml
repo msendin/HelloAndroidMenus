@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:hellomenu="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/menu_op1"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:orderInCategory="1"
+        android:alphabeticShortcut="P"
+        
+        android:title="@string/menu_op1" />
+    
+    <item
+        android:id="@+id/menu_op2"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:orderInCategory="2"
+        android:alphabeticShortcut="U"
+		hellomenu:showAsAction="always"
+        android:title="@string/menu_op2" />
+    
+    <item
+        android:id="@+id/menu_op3"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:orderInCategory="3"
+        android:alphabeticShortcut="A"
+		hellomenu:showAsAction="ifRoom|withText"
+        android:title="@string/menu_op3" >
+     
+    	<menu>
+    	    <item android:title="@string/menu_op3_1" 
+    	        android:orderInCategory="4"
+    	        android:id="@+id/SubMnuOpc1" />
+    	    
+    	    <item android:title="@string/menu_op3_2" 
+    	        android:orderInCategory="5"
+    	        android:id="@+id/SubMnuOpc2" />
+    	</menu>
+    </item>
+   
+</menu>
